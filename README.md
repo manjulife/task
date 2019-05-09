@@ -42,6 +42,7 @@ ansible 2.7.10
 sudo nano /etc/ansible/hosts
 
 [task]
+
 192.168.56.101 ansible_port=22 ansible_ssh_user=ubuntu ansible_ssh_pass=password
 
 # Usage
