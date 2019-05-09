@@ -6,27 +6,7 @@
     update_cache: yes
     cache_valid_time: 3600
 
-#- name: Install packages
-#  apt: name={{item}}
-#  with_items:
-#    - python3-pip
-#    - python3-mysqldb
-
-
-#- name: install python2.7
-#  apt:
-#    name: python2.7
-#    state: present
-#    update_cache: yes
-
-#- name: create python symlink
-#  file:
-#    src: /usr/bin/python2.7
-#    dest: /usr/bin/python
-#    owner: root
-#    group: root
-#    state: link
-- name: "Installing apt dependencies"
+- name: Installing apt dependencies
   apt:
     name: "{{item}}"
   with_items:
@@ -34,20 +14,8 @@
     - python-dev
     - libmysqlclient-dev
     - python3-pip
-#  update_cache: yes
 
-#- name: Install pip
-#  apt:
-#    name: python-pip
-#    update_cache: yes
-#    state: present
-
-#- pip:
-#    name: PyMySql
-#- pip:
-#    name: MySQLdb
-
-- name: Install server-apache2
+- name: Install server-packages
   apt:
     name: "{{ item }}"
     state: present
