@@ -48,6 +48,7 @@ sudo nano /etc/ansible/hosts
 # Usage
 
 git clone https://github.com/manjulife/task.git
+
 cd task/
 
 vagrant up
