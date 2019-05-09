@@ -29,10 +29,12 @@ vagrant init ubuntu/xenial64
 # Install Ansible
 
 sudo apt install software-properties-common
+
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt update
 
 sudo apt install ansible
+
 ansible 2.7.10
 
 # Setting Up Ansible Hosts
