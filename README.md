@@ -1,6 +1,7 @@
 # Install virtualbox
 
 sudo apt update
+
 sudo apt install virtualbox
 
 
@@ -18,7 +19,7 @@ Vagrant 2.2.4
 
 # Create the project directory
 
-mkdir -p ~/task-project 
+mkdir -p ~/task-project
 cd ~/task-project
 
 # Install Ubuntu 16.04
